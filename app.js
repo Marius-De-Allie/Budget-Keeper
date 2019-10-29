@@ -5,3 +5,7 @@ const budgetController = (() => {
 const uiController = (() => {
 
 }());
+// GLOBAL APP CONTROLLER - Controller Module.
+const controller = (function(model, view) {
+  
+}(budgetController, uiController));

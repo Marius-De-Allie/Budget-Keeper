@@ -1,3 +1,3 @@
-const budgetController = (function() {
-  
+const budgetController = (() => {
+
 }());

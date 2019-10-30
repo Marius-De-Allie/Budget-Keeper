@@ -6,6 +6,6 @@ const uiController = (function() {
 
 }());
 /** GLOBAL APP CONTROLLER - Controller Module. **/
-const controller = (function(budgetCtrl, view) {
+const controller = (function(budgetCtrl, uiCtrl) {
 
 }(budgetController, uiController));

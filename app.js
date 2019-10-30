@@ -1,10 +1,11 @@
+/** BUDGET CONTROLLER - Model module **/
 const budgetController = (function() {
 }());
-/** UI controller (view module) **/
+/** UI CONTROLLER - View module **/
 const uiController = (function() {
 
 }());
-// GLOBAL APP CONTROLLER - Controller Module.
-const controller = (function(model, view) {
+/** GLOBAL APP CONTROLLER - Controller Module. **/
+const controller = (function(budgetCtrl, view) {
 
 }(budgetController, uiController));

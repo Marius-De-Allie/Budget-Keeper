@@ -18,4 +18,17 @@ document.addEventListener('keypress', function(evt) {
     console.log('Enter key pressed.');
   }
 });
+/* Private function to add new item to app. */
+const ctrlAddItem = function() {
+  // 1. Get field input data.
+
+  // 2. Add the item to the budget controller.
+
+  // 3. Add the item to UI.
+
+  // 4. Calculate the budget.
+
+  // 5. Display the budget in UI.
+
+};
 }(budgetController, uiController));

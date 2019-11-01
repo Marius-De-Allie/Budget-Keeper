@@ -3,6 +3,10 @@ const budgetController = (function() {
 }());
 /** UI CONTROLLER - View module **/
 const uiController = (function() {
+  // Public methods.
+  return {
+    
+  }
 
 }());
 /** GLOBAL APP CONTROLLER - Controller Module. **/
@@ -20,7 +24,7 @@ document.addEventListener('keypress', function(evt) {
 });
 /* Private function to add new item to app. */
 const ctrlAddItem = function() {
-  // 1. Get field input data.
+  // 1. Get field input data. *This needs to be done in the uicontroller module
 
   // 2. Add the item to the budget controller.
 

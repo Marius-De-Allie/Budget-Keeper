@@ -11,4 +11,8 @@ const controller = (function(budgetCtrl, uiCtrl) {
 document.querySelector('.add__btn').addEventListener('click', function() {
   console.log('add button clicked.');
 });
+/* Enter keypress event handler on document object. */
+document.addEventListener('keypress' function(evt) {
+  console.log('key pressed.');
+});
 }(budgetController, uiController));

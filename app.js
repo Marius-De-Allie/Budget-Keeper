@@ -5,7 +5,9 @@ const budgetController = (function() {
 const uiController = (function() {
   // Public methods.
   return {
-    
+    getInput: function() {
+
+    },
   }
 
 }());

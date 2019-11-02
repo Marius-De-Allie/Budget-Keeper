@@ -6,8 +6,8 @@ const uiController = (function() {
   // Public methods.
   return {
     getInput: function() {
-      return {
-        type:
+      return { //have getInput public method return an object with 3 properties for input field values.
+        type: document.querySelector('.add__description').value, // Value in description input field. 
       };
     },
   };

@@ -6,7 +6,9 @@ const uiController = (function() {
   // Public methods.
   return {
     getInput: function() {
+      return {
 
+      };
     },
   }
 

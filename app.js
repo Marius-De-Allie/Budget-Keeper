@@ -7,10 +7,10 @@ const uiController = (function() {
   return {
     getInput: function() {
       return {
-
+        type:
       };
     },
-  }
+  };
 
 }());
 /** GLOBAL APP CONTROLLER - Controller Module. **/

@@ -7,8 +7,8 @@ const uiController = (function() {
   return {
     getInput: function() {
       return { //have getInput public method return an object with 3 properties for input field values.
-        type: document.querySelector('.add__type').value, // Value of type select element - Value is iether 'inc' or 'exp'.
-        description: 
+        type: document.querySelector('.add__type').value, // Retrieve value of type select element - Value is iether 'inc' or 'exp'.
+        description: document.querySelector('.add__description').value, // Retrieve value in description input field.
       };
     },
   };

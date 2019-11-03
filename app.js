@@ -32,9 +32,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
   };
 
   /* Click event handler on add button */
-  document.querySelector('.add__btn').addEventListener('click', function() {
-    console.log('add button clicked.');
-  });
+  document.querySelector('.add__btn').addEventListener('click', ctrlAddItem);
   /* Enter keypress event handler on document object. */
   document.addEventListener('keypress', function(evt) {
     console.log('key pressed.');

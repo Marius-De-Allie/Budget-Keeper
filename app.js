@@ -9,7 +9,7 @@ const uiController = (function() {
       return { //have getInput public method return an object with 3 properties for input field values.
         type: document.querySelector('.add__type').value, // Retrieve value of type select element - Value is iether 'inc' or 'exp'.
         description: document.querySelector('.add__description').value, // Retrieve value in description input field.
-        value: document.querySelector('.add__value').value // Retrieve current value in the item value input field.
+        value: parseFloat(document.querySelector('.add__value').value) // Retrieve current value in the item value input field.
       };
     },
   };

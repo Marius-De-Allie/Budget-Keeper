@@ -5,7 +5,7 @@ const budgetController = (function() {
 const uiController = (function() {
   // Public methods.
   return {
-    getInput: function() {
+    getInput: function() { // Will be called at step 1 in controller.ctrlAddItem.
       return { //have getInput public method return an object with 3 properties for input field values.
         type: document.querySelector('.add__type').value, // Retrieve value of type select element - Value is iether 'inc' or 'exp'.
         description: document.querySelector('.add__description').value, // Retrieve value in description input field.
@@ -30,8 +30,8 @@ document.addEventListener('keypress', function(evt) {
 });
 /* Private function to add new item to app. */
 const ctrlAddItem = function() {
-  // 1. Get field input data. *This needs to be done in the uicontroller module
-
+  // 1. Get field input data. *This needs to be done in the uicontroller module.
+  let input = iuCtrl.getInput(); // Call uiController getInput public method and assign returned obj to input var.
   // 2. Add the item to the budget controller.
 
   // 3. Add the item to UI.

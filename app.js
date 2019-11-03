@@ -38,6 +38,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
     console.log('key pressed.');
     if (evt.keyCode === 13) { // Check whether key pressed is enter key.
       console.log('Enter key pressed.');
+      ctrlAddItem();
     }
   });
 }(budgetController, uiController));

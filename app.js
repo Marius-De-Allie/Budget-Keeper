@@ -64,7 +64,7 @@ const uiController = (function() {
     },
     addListItem: function(object, type) {
       let html; // Declare variable to hold html placeholder content.
-      let element; // Declare variable to store parent element node of item being added to DOM.
+      let parentElement; // Declare variable to store parent element node of item being added to DOM.
 
     }
   };

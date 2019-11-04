@@ -8,6 +8,7 @@ const budgetController = (function() {
   /* Income constrcutor function for instantiating new income objects */
   const Income = function(id, description, value) {
     this.id = id;
+    this.description = description;
 
   };
 }());

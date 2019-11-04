@@ -72,7 +72,8 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 1. Get field input data. *This needs to be done in the uicontroller module.
     let input = uiCtrl.getInput(); // Call uiController getInput public method and assign returned obj to input var.
     // 2. Add the item to the budget controller.
-
+    let newItem = budgetCtrl.addItem(input.type, input.description, input.value);
+    console.log(newItem);
     // 3. Add the item to UI.
 
     // 4. Calculate the budget.

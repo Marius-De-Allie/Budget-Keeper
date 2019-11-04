@@ -28,7 +28,9 @@ const budgetController = (function() {
   return {
     addItem: function(type, desc, val) { // public method used to create + add new item(exp or inc) to data strcuture.
       let newItem;
-
+      if (type === 'exp') {
+        // Instantiate new expense object.
+      }
     }
   };
 

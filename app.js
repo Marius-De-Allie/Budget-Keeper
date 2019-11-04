@@ -3,7 +3,7 @@ const budgetController = (function() {
   const Expense = function(id, description, value) { // Declare Expense constructor function to instantiate new expense objects.
     this.id = id;
     this.description = description;
-
+    this.value = value;
   };
 }());
 /** UI CONTROLLER - View module **/

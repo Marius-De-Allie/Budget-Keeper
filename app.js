@@ -62,6 +62,9 @@ const uiController = (function() {
         value: parseFloat(document.querySelector('.add__value').value) // Retrieve current value in the item value input field.
       };
     },
+    addListItem: function(object, type) {
+
+    };
   };
 
 }());

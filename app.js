@@ -67,7 +67,7 @@ const uiController = (function() {
       let parentElement; // Declare variable to store parent element node of item being added to DOM.
       /* CREATE HTML STRING WITH PLACEHOLDER CONTENT */
       if (type === 'inc') {
-
+        parentElement = document.querySelector('.income__list');
       }
     }
   };

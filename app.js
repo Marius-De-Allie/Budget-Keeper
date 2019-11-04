@@ -20,6 +20,7 @@ const budgetController = (function() {
     },
     totals: {
       exp: 0,
+      inc: 0
     }
   };
 

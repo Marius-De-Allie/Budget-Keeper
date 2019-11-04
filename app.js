@@ -15,8 +15,11 @@ const budgetController = (function() {
   /* DATA STRUCTURE TO STORE ALL EXPENSE/INCOME OBJECTS AS WELL AS EXPENSE/INCOME TOTALS */
   const data = {
     allItems: {
-      exp: [],
-      inc: []
+      exp: [], // Array to store all expense objects.
+      inc: [] // Array to store all income objects.
+    },
+    totals: {
+
     }
   };
 

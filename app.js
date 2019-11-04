@@ -26,7 +26,9 @@ const budgetController = (function() {
 
   /* PUBLIC METHODS */
   return {
+    addItem: function(type, desc, val) {
 
+    }
   };
 
 }());

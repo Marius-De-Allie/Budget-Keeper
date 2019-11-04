@@ -1,9 +1,13 @@
 /** BUDGET CONTROLLER - Model module **/
 const budgetController = (function() {
-  const Expense = function(id, description, value) { // Declare Expense constructor function to instantiate new expense objects.
+  const Expense = function(id, description, value) { // Expense constructor function to instantiate new expense objects.
     this.id = id;
     this.description = description;
     this.value = value;
+  };
+  /* Income constrcutor function for instantiating new income objects */
+  const Income = function(id, description, value) {
+    
   };
 }());
 /** UI CONTROLLER - View module **/

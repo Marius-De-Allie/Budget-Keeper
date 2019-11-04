@@ -46,6 +46,7 @@ const budgetController = (function() {
       }
       // Add new created item to either exp or inc array.
       data.AllItems[type].push(newItem);
+      return newItem;
     }
   };
 

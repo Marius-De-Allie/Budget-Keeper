@@ -63,8 +63,9 @@ const uiController = (function() {
       };
     },
     addListItem: function(object, type) {
+      let html; // Declare variable to hold html placeholder content.
 
-    };
+    }
   };
 
 }());

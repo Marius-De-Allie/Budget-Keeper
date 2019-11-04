@@ -26,7 +26,8 @@ const budgetController = (function() {
 
   /* PUBLIC METHODS */
   return {
-    addItem: function(type, desc, val) {
+    addItem: function(type, desc, val) { // public method used to create + add new item(exp or inc) to data strcuture.
+      let newItem;
 
     }
   };

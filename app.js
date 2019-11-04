@@ -33,8 +33,8 @@ const budgetController = (function() {
         newItem = new Expense(id, desc, val);
       }
       else if (type === 'inc') {
-        // Instantiate new expense object.
-        
+        // Instantiate new income object.
+        newItem = new Income(id, desc, val);
       }
     }
   };

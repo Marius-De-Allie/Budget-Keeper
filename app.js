@@ -19,7 +19,7 @@ const budgetController = (function() {
       inc: [] // Array to store all income objects.
     },
     totals: {
-
+      exp: 0,
     }
   };
 

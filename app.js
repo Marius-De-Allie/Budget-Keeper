@@ -12,11 +12,13 @@ const budgetController = (function() {
     this.value = value;
   };
 
-  /* DATA STRUCTURE TO STORE ALL EXPENSE/INCOME OBJECTS INSTANTIATED AS WELL AS EXPENSE/INCOME TOTALS */
+  /* DATA STRUCTURE TO STORE ALL EXPENSE/INCOME OBJECTS AS WELL AS EXPENSE/INCOME TOTALS */
   const data = {
+    allItems: {
 
+    }
   };
-  
+
 }());
 /** UI CONTROLLER - View module **/
 const uiController = (function() {

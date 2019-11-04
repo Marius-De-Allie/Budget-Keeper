@@ -24,6 +24,11 @@ const budgetController = (function() {
     }
   };
 
+  /* PUBLIC METHODS */
+  return {
+
+  };
+
 }());
 /** UI CONTROLLER - View module **/
 const uiController = (function() {

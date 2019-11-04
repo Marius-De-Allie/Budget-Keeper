@@ -31,6 +31,7 @@ const budgetController = (function() {
       let id = 0; // Declare variable to store item id.
       if (data.allItems[type].length > 0) {
         let lastIndexOfArray = data.allItems[type].length - 1; // save index of last element in exp or inc array to variable.
+        id = data.allItems[type][lastIndexOfArray].id + 1; // Set id variable to the value of the id of the last element in the current array plus 1.
       }
       if (type === 'exp') {
         // Instantiate new expense object.

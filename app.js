@@ -11,6 +11,10 @@ const budgetController = (function() {
     this.description = description;
     this.value = value;
   };
+  const calculateTotal = function(type) { // Declare function to calculate total expense and total income.
+
+  };
+
 
   /* DATA STRUCTURE TO STORE ALL EXPENSE/INCOME OBJECTS AS WELL AS EXPENSE/INCOME TOTALS */
   const data = {
@@ -49,7 +53,8 @@ const budgetController = (function() {
       return newItem;
     },
     calculateBudget: function() { //public method used to calculate the available budget.
-
+      // 1. Calculate total income and expenes.
+      // 2. Calculate budget (totals.inc - totals.exp).
     }
   };
 

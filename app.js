@@ -59,8 +59,9 @@ const budgetController = (function() {
     calculateBudget: function() { //public method used to calculate the available budget.
       // 1. Calculate total income and expenes.
       calculateTotal('inc'); // Calculate Total income.
+      calculateTotal('exp'); // Calculate Total expenses.
       // 2. Calculate budget (totals.inc - totals.exp).
-      
+
       // 3. Calculate percentage of income spent.
     }
   };

@@ -47,6 +47,9 @@ const budgetController = (function() {
       // Add new created item to either exp or inc array.
       data.allItems[type].push(newItem);
       return newItem;
+    },
+    calculateBudget: function() { //public method used to calculate the available budget.
+
     }
   };
 
@@ -93,7 +96,9 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 2. Return the budget.
 
     // 3. Display the budget in the UI.
-  }
+  };
+
+
   /* Private function to add new item to app. */
   const ctrlAddItem = function() {
     // 1. Get field input data. *This needs to be done in the uicontroller module.

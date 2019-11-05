@@ -72,7 +72,7 @@ const uiController = (function() {
       }
       else if (type === 'exp') { // if item is of type 'exp'.
         parentElement = document.querySelector('expenses__list');
-
+        html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
       }
     }
   };

@@ -74,6 +74,8 @@ const uiController = (function() {
         parentElement = document.querySelector('expenses__list');
         html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
       }
+      /* REPLACE PLACEHOLDER TEXT IN HTML STRING WITH ACTUAL DATA */
+      let newHtml = html.replace('%id%', obj.id); //replace place holder text %id% in html string with actual object id value.
     }
   };
 

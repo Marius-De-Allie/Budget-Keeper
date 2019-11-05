@@ -75,9 +75,9 @@ const uiController = (function() {
         html = '<div class="item clearfix" id="exp-%id%"><div class="item__description">%description%</div><div class="right clearfix"><div class="item__value">%value%</div><div class="item__percentage">21%</div><div class="item__delete"><button class="item__delete--btn"><i class="ion-ios-close-outline"></i></button></div></div></div>';
       }
       /* REPLACE PLACEHOLDER TEXT IN HTML STRING WITH ACTUAL DATA */
-      let newHtml = html.replace('%id%', obj.id); //replace place holder text %id% in html string with actual object.id value.
-      newHtml = newHtml.replace('%description%', obj.description); //replace place holder text %description% in html string with actual object.description value.
-      newHtml = newHtml.replace('%value%', obj.value); //replace place holder text %value% in html string with actual object.value value.
+      let newHtml = html.replace('%id%', object.id); //replace place holder text %id% in html string with actual object.id value.
+      newHtml = newHtml.replace('%description%', object.description); //replace place holder text %description% in html string with actual object.description value.
+      newHtml = newHtml.replace('%value%', object.value); //replace place holder text %value% in html string with actual object.value value.
       /*INSERT THE HTML INTO THE DOM */
       parentElement.insertAdjacentHTML('beforeend', newHtml); // Add new item html element as the last child of the parent element.
     }
@@ -91,7 +91,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 1. Get field input data. *This needs to be done in the uicontroller module.
     let input = uiCtrl.getInput(); // Call uiController getInput public method and assign returned obj to input var.
     // 2. Add the item to the budget controller.
-    let newItem = budgetCtrl.addItem(input.type, input.description, input.value);
+    let newItem = budgetCtrl.addItem(input.type, input.description, input.value); // Call addItem passing in input properties as args and save returned object to newItem variable.
     console.log(newItem);
     // 3. Add the item to UI.
 

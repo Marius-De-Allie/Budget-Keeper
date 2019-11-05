@@ -86,6 +86,14 @@ const uiController = (function() {
 }());
 /** GLOBAL APP CONTROLLER - Controller Module. **/
 const controller = (function(budgetCtrl, uiCtrl) {
+  /* Function that will calculate and display budget when and item is added or removed. */
+  const updateBudget = function() {
+    // 1. Calculate the budget.
+
+    // 2. Return the budget.
+
+    // 3. Display the budget in the UI.
+  }
   /* Private function to add new item to app. */
   const ctrlAddItem = function() {
     // 1. Get field input data. *This needs to be done in the uicontroller module.

@@ -13,6 +13,9 @@ const budgetController = (function() {
   };
   const calculateTotal = function(type) { // Declare function to calculate total expense and total income.
     let sum = 0; // Declare sum variable and assign value of 0.
+    data.allItems[type].forEach(function(element) {
+      sum += element.value;
+    });
   };
 
 

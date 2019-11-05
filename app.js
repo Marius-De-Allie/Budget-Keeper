@@ -12,7 +12,7 @@ const budgetController = (function() {
     this.value = value;
   };
   const calculateTotal = function(type) { // Declare function to calculate total expense and total income.
-
+    let sum = 0; // Declare sum variable and assign value of 0.
   };
 
 

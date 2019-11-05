@@ -16,6 +16,7 @@ const budgetController = (function() {
     data.allItems[type].forEach(function(element) {
       sum += element.value;
     });
+    data.totals[type] = sum; // Assign value of sum to data.totals.exp or data.totals.inc property.
   };
 
 

@@ -94,7 +94,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
     let newItem = budgetCtrl.addItem(input.type, input.description, input.value); // Call addItem passing in input properties as args and save returned object to newItem variable.
     console.log(newItem);
     // 3. Add the item to UI.
-
+    uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
     // 4. Calculate the budget.
 
     // 5. Display the budget in UI.

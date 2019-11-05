@@ -77,6 +77,7 @@ const uiController = (function() {
       /* REPLACE PLACEHOLDER TEXT IN HTML STRING WITH ACTUAL DATA */
       let newHtml = html.replace('%id%', obj.id); //replace place holder text %id% in html string with actual object.id value.
       newHtml = newHtml.replace('%description%', obj.description); //replace place holder text %description% in html string with actual object.description value.
+      newHtml = newHtml.replace('%value%', obj.value); //replace place holder text %value% in html string with actual object.value value.
     }
   };
 

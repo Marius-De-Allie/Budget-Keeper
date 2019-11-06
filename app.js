@@ -73,7 +73,10 @@ const budgetController = (function() {
       }
     },
     getBudget: function() { // return the the budget values from data object.
+      return {
+        budget: data['budget'],
 
+      }
     }
   };
 

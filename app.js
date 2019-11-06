@@ -112,6 +112,9 @@ const uiController = (function() {
       newHtml = newHtml.replace('%value%', object.value); //replace place holder text %value% in html string with actual object.value value.
       /*INSERT THE HTML INTO THE DOM */
       parentElement.insertAdjacentHTML('beforeend', newHtml); // Add new item html element as the last child of the parent element.
+    },
+    displayBudget: function(budgetObject) { // Public method to display budget values in UI.
+
     }
   };
 

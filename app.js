@@ -30,7 +30,8 @@ const budgetController = (function() {
       exp: 0,
       inc: 0
     },
-    budget: 0 // budget property to hold budget calculation value.
+    budget: 0, // budget property to hold budget calculation value.
+    percentage: -1 // percentage property to hold percentage of income spent.
   };
 
   /* PUBLIC METHODS */

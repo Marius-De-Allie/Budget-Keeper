@@ -123,7 +123,8 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 1. Calculate the budget.
     budgetCtrl.calculateBudget(); // Calculate budget values.
     // 2. Return the budget.
-    
+    let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
+    console.log(budget);
     // 3. Display the budget in the UI.
   };
 

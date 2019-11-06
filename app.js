@@ -76,6 +76,7 @@ const budgetController = (function() {
       return {
         budget: data['budget'],
         totalIncome: data['totals']['inc'],
+        totalExpenses: data['totals']['exp'],
 
       }
     }

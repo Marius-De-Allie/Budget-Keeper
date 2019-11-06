@@ -116,6 +116,7 @@ const uiController = (function() {
     displayBudget: function(budgetObject) { // Public method to display budget values in UI.
       document.querySelector('.budget__value').textContent = budgetObject['budget']; // Set '.budget__value' DOM element node textContent value to value stored in budgetController.data.budget.
       document.querySelector('.budget__income--value').textContent = budgetObject['totalIncome']; // Set '.budget__income--value' DOM element node textContent value to value stored in budgetController.data.totals.inc.
+      document.querySelector('.budget__expenses--value').textContent = budgetObject['totalExpenses']; // Set '.budget__expenses--value' DOM element node textContent value to value stored in budgetController.data.totals.exp.
 
     }
   };

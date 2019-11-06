@@ -65,6 +65,9 @@ const budgetController = (function() {
       // 2. Calculate budget (totals.inc - totals.exp).
       data.budget = data['totals']['inc'] - data['totals']['exp']; // Calcuate budget and store in data.budget property.
       // 3. Calculate percentage of income spent.
+      if (data.totals.inc > 0) {
+        
+      }
     }
   };
 

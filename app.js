@@ -121,9 +121,9 @@ const controller = (function(budgetCtrl, uiCtrl) {
   /* Function that will calculate and display budget when and item is added or removed. */
   const updateBudget = function() {
     // 1. Calculate the budget.
-
+    budgetCtrl.calculateBudget(); // Calculate budget values.
     // 2. Return the budget.
-
+    
     // 3. Display the budget in the UI.
   };
 

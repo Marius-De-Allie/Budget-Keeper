@@ -114,7 +114,8 @@ const uiController = (function() {
       parentElement.insertAdjacentHTML('beforeend', newHtml); // Add new item html element as the last child of the parent element.
     },
     displayBudget: function(budgetObject) { // Public method to display budget values in UI.
-      document.querySelector('.budget__value').textContent = budgetObject['budget'] // Set '.budget__value' DOM element node textContent value to value stored in budgetController.data.budget.
+      document.querySelector('.budget__value').textContent = budgetObject['budget']; // Set '.budget__value' DOM element node textContent value to value stored in budgetController.data.budget.
+      document.querySelector('.budget__income--value').textContent = budgetObject['totalIncome']; // Set '.budget__income--value' DOM element node textContent value to value stored in budgetController.data.totals.inc.
 
     }
   };

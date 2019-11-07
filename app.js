@@ -138,7 +138,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
     let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
     console.log(budget);
     // 3. Display the budget in UI.
-
+    uiCtrl.displayBudget(budget) // Call displayBudget method passing in budget object return from budgetController.getBudget method to add updated budget data to UI.
   };
 
 

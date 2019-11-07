@@ -121,8 +121,8 @@ const uiController = (function() {
       if (budgetObject.percentage > 0) { // Check if budgetController.data.percentage is greater than 0.
         document.querySelector('.budget__expenses--percentage').textContent = `${budgetObject['percentage']}%`; // Set '.budget__expenses--percetage' DOM element node textContent value to value stored in budgetController.data.percentage.
       }
-      else {
-
+      else { //If budgetController.data.percentage is not > 0.
+        document.querySelector('.budget__expenses-percentage').textContent = '---'; // set expense percentage DOM element textContent to '---'.
       }
     }
   };

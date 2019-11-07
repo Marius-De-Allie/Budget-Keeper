@@ -152,8 +152,8 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 3. Add the item to UI.
     uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
     // 4. Clear input fields.
-    
-    // 4. Calculate  and update budget.
+
+    // 5. Calculate  and update budget.
     updateBudget();
     /* Alternatively */
     // budgetCtrl.calculateBudget(); // Calculate budget values.

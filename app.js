@@ -122,7 +122,7 @@ const uiController = (function() {
         document.querySelector('.budget__expenses--percentage').textContent = `${budgetObject['percentage']}%`; // Set '.budget__expenses--percetage' DOM element node textContent value to value stored in budgetController.data.percentage.
       }
       else { //If budgetController.data.percentage is not > 0.
-        document.querySelector('.budget__expenses-percentage').textContent = '---'; // set expense percentage DOM element textContent to '---'.
+        document.querySelector('.budget__expenses--percentage').textContent = '---'; // set expense percentage DOM element textContent to '---'.
       }
     }
   };

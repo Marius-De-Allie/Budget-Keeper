@@ -118,6 +118,9 @@ const uiController = (function() {
       document.querySelector('.budget__income--value').textContent = budgetObject['totalIncome']; // Set '.budget__income--value' DOM element node textContent value to value stored in budgetController.data.totals.inc.
       document.querySelector('.budget__expenses--value').textContent = budgetObject['totalExpenses']; // Set '.budget__expenses--value' DOM element node textContent value to value stored in budgetController.data.totals.exp.
       document.querySelector('.budget__expenses--percentage').textContent = budgetObject['percentage']; // Set '.budget__expenses--percetage' DOM element node textContent value to value stored in budgetController.data.percentage.
+      if (budgetObject.percentage > 0) { // Check if budgetController.data.percentage is greater than 0.
+        document.querySelector('.budget__expenses--percentage').textContent = `${budgetObject['percentage']}%`; // Set '.budget__expenses--percetage' DOM element node textContent value to value stored in budgetController.data.percentage.
+      }
     }
   };
 

@@ -150,7 +150,10 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 3. Add the item to UI.
     uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
     // 4. Calculate  and update budget.
-
+    updateBudget();
+    /* Alternatively */
+    // budgetCtrl.calculateBudget(); // Calculate budget values.
+    // let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
     // 5. Display the budget in UI.
 
   };

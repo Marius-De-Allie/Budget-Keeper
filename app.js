@@ -154,6 +154,9 @@ const controller = (function(budgetCtrl, uiCtrl) {
   const ctrlAddItem = function() {
     // 1. Get field input data. *This needs to be done in the uicontroller module.
     let input = uiCtrl.getInput(); // Call uiController getInput public method and assign returned obj to input var.
+    if (input.description !=== '' && !isNan(input.value) && input.value > 0) { // check whether the value in the description iput field is not an empty string and the value in the 'value' field is a # and greater than 0.
+
+    }
     // 2. Add the item to the budget controller.
     let newItem = budgetCtrl.addItem(input.type, input.description, input.value); // Call addItem passing in input properties as args and save returned object to newItem variable.
     console.log(newItem);

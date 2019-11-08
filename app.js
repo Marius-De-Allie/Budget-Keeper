@@ -119,6 +119,7 @@ const uiController = (function() {
         inputFieldsArray.forEach(function(element) { // Loop through array of input fields and set texContent value to blank string on each array element.
           element.textContent = '';
         });
+        inputFieldsArray[0].focus(); // Set focus to first input field.
     },
     displayBudget: function(budgetObject) { // Public method to display budget values in UI.
       document.querySelector('.budget__value').textContent = budgetObject['budget']; // Set '.budget__value' DOM element node textContent value to value stored in budgetController.data.budget.

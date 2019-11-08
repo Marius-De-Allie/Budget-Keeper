@@ -72,6 +72,9 @@ const budgetController = (function() {
         data.percentage = -1;
       }
     },
+    calculatePercentages: function() {
+
+    },
     getBudget: function() { // return the the budget values from data object.
       return {
         budget: data['budget'],

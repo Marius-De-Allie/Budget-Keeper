@@ -114,7 +114,7 @@ const uiController = (function() {
       parentElement.insertAdjacentHTML('beforeend', newHtml); // Add new item html element as the last child of the parent element.
     },
     clearInputFields: function() { // Public method to clear input fields after new item is added.
-        const inputFields = document.querySelectorAll('.add__description', '.add__value'); // Store value of DOM element nodes '.add__description' and '.add__value' in nodeList.
+        const inputFields = document.querySelectorAll('input'); // Store value of DOM element nodes 'input' in nodeList.
         const inputFieldsArray = Array.from(inputFields); // Convert inputFields nodelist to an array.
         inputFieldsArray.forEach(function(element) { // Loop through array of input fields and set texContent value to blank string on each array element.
           element.textContent = '';
@@ -160,8 +160,8 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 3. Add the item to UI.
     uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
     // 4. Clear input fields.
-
-    // 5. Calculate  and update budget.
+    uiCtrl.clearInputFields(); // Call uiController.clearInputFields method to clear fields and return focus to description field.
+    // 5. Calculate and update budget in UI.
     updateBudget();
     /* Alternatively */
     // budgetCtrl.calculateBudget(); // Calculate budget values.

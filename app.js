@@ -155,20 +155,20 @@ const controller = (function(budgetCtrl, uiCtrl) {
     // 1. Get field input data. *This needs to be done in the uicontroller module.
     let input = uiCtrl.getInput(); // Call uiController getInput public method and assign returned obj to input var.
     if (input.description !=== '' && !isNan(input.value) && input.value > 0) { // check whether the value in the description iput field is not an empty string and the value in the 'value' field is a # and greater than 0.
-
+      /* ADD ITEM TO DATA STRUCTURE AND UI. */
+      // 2. Add the item to the budget controller.
+      let newItem = budgetCtrl.addItem(input.type, input.description, input.value); // Call addItem passing in input properties as args and save returned object to newItem variable.
+      console.log(newItem);
+      // 3. Add the item to UI.
+      uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
+      // 4. Clear input fields.
+      uiCtrl.clearInputFields(); // Call uiController.clearInputFields method to clear fields and return focus to description field.
+      // 5. Calculate and update budget in UI.
+      updateBudget();
+      /* Alternatively */
+      // budgetCtrl.calculateBudget(); // Calculate budget values.
+      // let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
     }
-    // 2. Add the item to the budget controller.
-    let newItem = budgetCtrl.addItem(input.type, input.description, input.value); // Call addItem passing in input properties as args and save returned object to newItem variable.
-    console.log(newItem);
-    // 3. Add the item to UI.
-    uiCtrl.addListItem(newItem, input.type); // Call uiController addListItem method, to add newly instantiated item object to the DOM.
-    // 4. Clear input fields.
-    uiCtrl.clearInputFields(); // Call uiController.clearInputFields method to clear fields and return focus to description field.
-    // 5. Calculate and update budget in UI.
-    updateBudget();
-    /* Alternatively */
-    // budgetCtrl.calculateBudget(); // Calculate budget values.
-    // let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
   };
 
   /* Click event handler on add button */

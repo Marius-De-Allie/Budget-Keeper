@@ -5,9 +5,14 @@ const budgetController = (function() {
     this.description = description;
     this.value = value;
   };
-  /* Expense controcutor function prototype methods */
+  /* Expense constructor function prototype methods */
   Expense.prototype.calculatePercentages = function(totalInc) {
+    if (totalIn > 0) {
 
+    }
+    else {
+
+    }
   };
   /* Income constrcutor function for instantiating new income objects */
   const Income = function(id, description, value) {

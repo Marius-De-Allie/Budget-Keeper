@@ -5,6 +5,10 @@ const budgetController = (function() {
     this.description = description;
     this.value = value;
   };
+  /* Expense controcutor function prototype methods */
+  Expense.prototype.calculatePercentages = function(totalInc) {
+
+  };
   /* Income constrcutor function for instantiating new income objects */
   const Income = function(id, description, value) {
     this.id = id;

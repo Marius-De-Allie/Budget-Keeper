@@ -7,8 +7,8 @@ const budgetController = (function() {
   };
   /* Expense constructor function prototype methods */
   Expense.prototype.calculatePercentages = function(totalInc) {
-    if (totalIn > 0) {
-
+    if (totalInc > 0) {
+      this.percentage = Math.round((this.value / totalInc) * 100);
     }
     else {
 

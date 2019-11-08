@@ -115,6 +115,7 @@ const uiController = (function() {
     },
     clearInputFields: function() { // Public method to clear input fields after new item is added.
         const inputFields = document.querySelectorAll('.add__description', '.add__value'); // Store value of DOM element nodes '.add__description' and '.add__value' in nodeList.
+        const inputFieldsArray = Array.from(inputFields); // Convert inputFields nodelist to an array.
     },
     displayBudget: function(budgetObject) { // Public method to display budget values in UI.
       document.querySelector('.budget__value').textContent = budgetObject['budget']; // Set '.budget__value' DOM element node textContent value to value stored in budgetController.data.budget.

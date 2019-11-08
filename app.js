@@ -168,6 +168,7 @@ const controller = (function(budgetCtrl, uiCtrl) {
       /* Alternatively */
       // budgetCtrl.calculateBudget(); // Calculate budget values.
       // let budget = budgetCtrl.getBudget(); // return budget, totals and percentage of income spent.
+      // 6. Calculate and update percentages in UI
     }
   };
 

@@ -116,8 +116,8 @@ const uiController = (function() {
     clearInputFields: function() { // Public method to clear input fields after new item is added.
         const inputFields = document.querySelectorAll('input'); // Store value of DOM element nodes 'input' in nodeList.
         const inputFieldsArray = Array.from(inputFields); // Convert inputFields nodelist to an array.
-        inputFieldsArray.forEach(function(element) { // Loop through array of input fields and set texContent value to blank string on each array element.
-          element.textContent = '';
+        inputFieldsArray.forEach(function(element) { // Loop through array of input fields and set value property to blank string on each array element.
+          element.value = '';
         });
         inputFieldsArray[0].focus(); // Set focus to first input field.
     },

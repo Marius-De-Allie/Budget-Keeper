@@ -11,7 +11,7 @@ const budgetController = (function() {
       this.percentage = Math.round((this.value / totalInc) * 100);
     }
     else {
-
+      this.percentage = -1;
     }
   };
   /* Income constrcutor function for instantiating new income objects */

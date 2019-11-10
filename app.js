@@ -82,7 +82,9 @@ const budgetController = (function() {
       }
     },
     calculatePercentages: function() {
-
+      data.allItems.exp.forEach(function(expense) {
+        expense.calculatePercentages(data.totals.inc);
+      })
     },
     getBudget: function() { // return the the budget values from data object.
       return {

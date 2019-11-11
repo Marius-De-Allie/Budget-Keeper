@@ -16,8 +16,8 @@ const budgetController = (function() {
     }
   };
   // Expense constructor function prototype method to retrieve expense percentage value.
-  Expense.prototype.getPercentage = function() {
-    return this.
+  Expense.prototype.getPercentage = function() { //return expense object's percentage property.
+    return this.percentage;
   };
   /* Income constrcutor function for instantiating new income objects */
   const Income = function(id, description, value) {

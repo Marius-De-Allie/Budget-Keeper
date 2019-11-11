@@ -15,6 +15,10 @@ const budgetController = (function() {
       this.percentage = -1;
     }
   };
+  // Expense constructor function prototype method to retrieve expense percentage value.
+  Expense.prototype.getPercentage = function() {
+    return this.
+  };
   /* Income constrcutor function for instantiating new income objects */
   const Income = function(id, description, value) {
     this.id = id;
